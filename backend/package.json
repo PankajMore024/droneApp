@@ -1,0 +1,46 @@
+{
+  "name": "iconnect",
+  "version": "1.0.0",
+  "description": "Iconnect project is basically used for API and Vendor Implementation",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js",
+    "start": "pm2 start app.js -l --time"
+  },
+  "keywords": [
+    "NodeJS",
+    "Express",
+    "Postgres",
+    "Sequelize",
+    "ORM",
+    "REST",
+    "API"
+  ],
+  "author": "Ravinesh",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "basic-ftp": "^4.6.6",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.18.2",
+    "express-validator": "^6.10.0",
+    "json-2-csv": "^3.10.3",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.1",
+    "mongoose": "^7.1.1",
+    "mysql2": "^2.2.5",
+    "node-x12": "^1.6.2",
+    "nodemailer": "^6.6.2",
+    "sequelize": "^6.6.2",
+    "shelljs": "^0.8.4",
+    "ssh2-sftp-client": "^7.0.0",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}

@@ -1,0 +1,300 @@
+/* Navbar CSS */
+
+.Navbar-ul li{
+  display: inline-block;
+  padding: 10px;
+}
+
+.Navbar-ul{
+  padding: 10px;
+  margin: 0;
+  background-color: black;
+}
+
+.Navbar-ul li a{
+  padding: 5px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.Nav-right {
+  text-align: right;
+}
+
+.footer{
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  background-color: lightgrey;
+}
+
+/* Login & Register Components */
+
+.login {
+  margin-left: 38%;
+  margin-top: 7%;
+}
+
+.login h1, .drone h1{
+  position: relative;
+  margin-left: 4%;
+}
+
+.Register {
+  margin-top: 7%;
+  margin-left: 38%;
+}
+
+.Register h1{
+  position: relative;
+  margin-left: 4%;
+}
+
+.inputbox{
+  display: block;
+  width: 300px;
+  padding: 10px;
+  margin: 10px 0px;
+}
+
+.formButton{
+  width: 150px;
+  padding: 8px;
+  margin-left: 10%;
+  margin-top: 15px;
+}
+/* ---------------------------------------------------------------------------------- */
+/* Drone Component */
+
+.drone-component {
+  display: flex;
+}
+
+.left-section {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.right-section {
+  width: 650px;
+  height: 460px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+  overflow-y: auto;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  outline: none; /* Remove the outline */
+  background-color: transparent; /* Remove the grey background */
+}
+
+.right-section::-webkit-scrollbar {
+  width: 8px; /* Adjust the width of the scrollbar */
+}
+
+.right-section::-webkit-scrollbar-thumb {
+  background-color: #888; /* Adjust the color of the scrollbar thumb */
+  border-radius: 4px;
+}
+
+.right-section::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Adjust the color of the scrollbar thumb on hover */
+}
+
+
+.drone-component:hover .add-drone-button {
+  transform: scale(1.1);
+}
+
+.add-drone-button {
+  margin-left: -25%;
+  font-size: 80px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: transform 0.3s;
+}
+
+.add-drone-button:hover {
+  transform: scale(1.1);
+}
+
+.drone-form.show {
+  opacity: 1;
+  max-height: 1000px;
+  transition: opacity 0.3s, max-height 0.3s;
+}
+
+.hide {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+
+.drone-form {
+  margin-left: -120px;
+  margin-top: -40px;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.3s, max-height 0.3s;
+}
+
+.drone-form h1 {
+  font-size: 34px;
+  margin-bottom: 10px;
+}
+
+.drone-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.drone-form input {
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 300px;
+}
+
+.drone-form button {
+  padding: 10px 20px;
+  width: 150px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.drone-form button:hover {
+  background-color: #0056b3;
+}
+
+.error {
+  color: red;
+}
+
+.drone-list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  transition: all 0.3s ease-in-out; /* Add a transition for smooth realignment */
+}
+
+.drone-tile {
+  width: 250px;
+  background-color: #ec9136;
+  padding: 20px;
+  margin: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+}
+
+.drone-tile:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.drone-tile h3 {
+  font-size: 25px;
+  text-align: center;
+  margin-top: 3px;
+}
+
+.drone-tile p {
+  margin-bottom: 2px;
+}
+
+.drone-tile button {
+  padding: 5px 10px;
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.drone-tile button:hover {
+  background-color: #a71d2a;
+}
+
+p.No drones found {
+  text-align: center;
+}
+
+.addDroneText {
+  margin-left: -25%;
+}
+
+
+/* Profile Component */
+
+.container {
+  display: flex;
+  width: 100%;
+}
+
+.left {
+  margin-top: 12%;
+  margin-left: 10%;
+  width: 100%;
+}
+
+.Profile-Logo {
+  width: 60%;
+  display: flex;
+  margin-top: -3%;
+  margin-right: 10%;
+  justify-content: flex-end;
+  align-items: center;
+  transform: rotate(15deg);
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    width : 90px;
+    float : left;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: -12px;
+    transform: rotate(15deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .drone-tile {
+    width: 45%; /* Adjust the width for smaller screens */
+  }
+}
+
+/* .App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+} */
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes Profile-Logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
